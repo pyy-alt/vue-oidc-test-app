@@ -1,0 +1,23 @@
+<!--
+ Copyright (c) 2025 zdb
+ 
+ This software is released under the MIT License.
+ https://opensource.org/licenses/MIT
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/oidc-client@1.11.5/dist/oidc-client.min.js"></script>
+    <script>
+        // 如果你使用了模块导入 (import), 你的构建工具会处理它
+        // 如果你直接在 HTML 中引用，需要确保路径正确
+        // const { UserManager } = Oidc; // 如果 oidc-client 是通过 <script> 标签引入的
+
+        new Oidc.UserManager().signinSilentCallback();
+    </script>
+</body>
+</html>
