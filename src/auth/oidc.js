@@ -44,6 +44,10 @@ const settings = {
   // 这样它就会早于后端 10 秒过期时间进行刷新
   accessTokenExpiringNotificationTime: 3500, // 默认是 60 秒
 
+  extraQueryParams: {
+    prompt: 'consent' // 在登录时强制显示同意页面
+},
+
 
   filterProtocolClaims: true, // 过滤协议声明
   loadUserInfo: true, // 在获取 id_token 后自动加载用户信息
