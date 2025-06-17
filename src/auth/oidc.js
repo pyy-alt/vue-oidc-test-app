@@ -23,6 +23,7 @@ const settings = {
   client_id: 'mywebapi', // 您在 Orchard Core 中注册的客户端 ID
   redirect_uri: 'http://localhost:8080/callback', // 前端应用的认证成功回调 URL
   response_type: 'code', // 授权码流
+  // 当加上offline_access 这个scope时候，后端会反悔刷新token字段【refresh_token】
   scope: 'openid profile api1 offline_access', // 请求的权限范围
   post_logout_redirect_uri: 'http://localhost:8080/', // 登出后的重定向 URL
 
