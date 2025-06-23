@@ -22,11 +22,22 @@ const routes = [
     name: 'Callback',
     component: Callback
   },
+  // 注册
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('../views/Register.vue')
+  }, 
   // 你可以添加更多路由
   {
     path: '/error', // 一个简单的错误页面，用于回调失败时
     name: 'Error',
     template: '<div><p>An error occurred during authentication. Please try again.</p></div>'
+  },
+
+  {
+    path: '*', // 匹配所有未知路由，并重定向到主页
+    redirect: '/'
   }
 ];
 
